@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { useAppDispatch } from "../store/store";
 import { deleteTodo, editTodo, toggleTodo } from "../store/slices/todo-slice";
 import { MdDeleteForever } from "react-icons/md";
@@ -8,7 +8,7 @@ import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import styled from "@emotion/styled";
 
-const TodoItem: React.FC<TodoType> = ({ text, id, isChecked }) => {
+const TodoItem: FC<TodoType> = ({ text, id, isChecked }) => {
   const [toggleVisiableModal, setToggleVisiableModal] = useState(false);
   const [newText, setNewText] = useState(text);
   const dispatch = useAppDispatch();

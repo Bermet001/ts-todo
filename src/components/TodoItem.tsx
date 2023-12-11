@@ -93,6 +93,7 @@ const TodoTitle = styled(Typography)(() => ({
   flexGrow: "1",
   maxWidth: "80%",
   overflow: "hidden",
+  wordBreak: "break-all",
 }));
 
 const DeleteIcon = styled(MdDeleteForever)(() => ({

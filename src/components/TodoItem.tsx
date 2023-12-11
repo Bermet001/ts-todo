@@ -92,7 +92,6 @@ const TodoTitle = styled(Typography)(() => ({
   marginRight: "0.625rem",
   flexGrow: "1",
   maxWidth: "80%",
-  overflow: "hidden",
   wordBreak: "break-all",
 }));
 
